@@ -42,7 +42,6 @@ function maxOf(array) {
   if (array.length === 1) {
     return array
   } else {
-    console.log(array.pop())
-    return Math.max(array.pop(), maxOf(array))
+    return Math.max(array.splice(0,1), maxOf(array))
   }
 }
