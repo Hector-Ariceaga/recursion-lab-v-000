@@ -25,6 +25,6 @@ function isPalindrome(string) {
   } else if (string.length < 2){
     return true
   } else {
-    false
+    return false
   }
 }
