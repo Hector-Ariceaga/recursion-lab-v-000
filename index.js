@@ -53,6 +53,6 @@ function includesNumber(array, int) {
   } else if (array[0] === int) {
     return
   } else {
-    includesNumber(array.unshift(), int)
+    includesNumber(array.shift(), int)
   }
 }
