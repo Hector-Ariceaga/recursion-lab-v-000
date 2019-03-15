@@ -47,6 +47,5 @@ function maxOf(array) {
 }
 
 function includesNumber(array, int) {
-  console.log(array.includes(int))
-  array.includes(int)
+  return array.includes(int)
 }
