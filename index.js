@@ -41,7 +41,7 @@ function maxOf(array) {
   console.log(array)
   if (array.length < 2) {
     return array
-  } else{
+  } else {
     if (array[0] > array[1]) {
       return maxOf(array.splice(1,1))
     } else {
