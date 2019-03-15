@@ -45,3 +45,7 @@ function maxOf(array) {
     return Math.max(array.shift(), maxOf(array))
   }
 }
+
+function includesNumber(array, int) {
+  array.includes(int)
+}
