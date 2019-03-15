@@ -18,5 +18,3 @@ function reverseString(string) {
     return reversedString(string.substring(1)) + string[0]
   }
 }
-
-
