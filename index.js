@@ -34,6 +34,6 @@ function addUpTo(array, index) {
   if (index === 0) {
     return array[0]
   } else {
-    return addUpTo(array.slice(0, --index)) + array[index]
+    return addUpTo(array, index - 1) + array[index]
   }
 }
