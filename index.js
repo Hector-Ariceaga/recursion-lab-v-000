@@ -15,6 +15,6 @@ function reverseString(string) {
   if (string < 2) {
     return string
   } else {
-    return reversedString(string.substring(1)) + string[0]
+    return reverseString(string.substring(1)) + string[0]
   }
 }
