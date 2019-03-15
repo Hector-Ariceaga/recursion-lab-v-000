@@ -12,11 +12,10 @@ function printString(string) {
 }
 
 function reverseString(string) {
-  if (string) {
-    reversedString.unshift(string.slice(0,-1))
-    reverseString(string.slice(0,-1))
+  if (string < 2) {
+    return string
   } else {
-    return reversedString.join('')
+    return reversedString(string.substring(1)) + string[0]
   }
 }
 
