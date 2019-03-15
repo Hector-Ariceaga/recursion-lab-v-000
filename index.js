@@ -53,6 +53,6 @@ function includesNumber(array, int) {
   } else if (array[0] === int) {
     return true
   } else {
-    return includesNumber(array.pop(), int)
+    return includesNumber(array.splice(1), int)
   }
 }
