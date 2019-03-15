@@ -42,6 +42,6 @@ function maxOf(array) {
   if (array.length === 1) {
     return array
   } else {
-    return Math.max(array.unshift(), maxOf(array))
+    return Math.max(array.shift(), maxOf(array))
   }
 }
