@@ -39,13 +39,13 @@ function addUpTo(array, index) {
 
 function maxOf(array) {
   console.log(array)
-  if (array.length < 2) {
-    return array
-  } else {
+  if (array.length > 1) {
     if (array[0] > array[1]) {
       return maxOf(array.splice(1,1))
     } else {
       return maxOf(array.splice(0,1))
     }
+  } else {
+    return array
   }
 }
