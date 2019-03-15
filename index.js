@@ -47,7 +47,7 @@ function maxOf(array) {
 }
 
 function includesNumber(array, int) {
-  if (array.length < 1) {
+  if (array.length) {
     return false
   } else if (array[0] === int) {
     return
