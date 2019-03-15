@@ -51,7 +51,7 @@ function includesNumber(array, int) {
   if (array.length === 0) {
     return false
   } else if (array[0] === int) {
-    return
+    return true
   } else {
     return includesNumber(array.splice(1), int)
   }
