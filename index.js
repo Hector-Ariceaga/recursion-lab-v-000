@@ -32,7 +32,7 @@ function isPalindrome(string) {
 function addUpTo(array, index) {
   console.log(array, index)
   if (index > 0) {
-    return addUpTo(array.slice(1, index - 2)) + array[index]
+    return addUpTo(array.slice(0, index - )) + array[index]
   } else {
     array[0]
   }
