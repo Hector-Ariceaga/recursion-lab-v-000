@@ -31,9 +31,9 @@ function isPalindrome(string) {
 
 function addUpTo(array, index) {
   console.log(array, index)
-  if (index > 0) {
-    return addUpTo(array.slice(0, index - 1)) + array[index]
+  if (index < 1) {
+    return array(index)
   } else {
-    array[0]
+    return addUpTo(array.slice(0, index - 1)) + array[index]
   }
 }
